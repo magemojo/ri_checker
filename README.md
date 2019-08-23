@@ -6,6 +6,8 @@ For RIs
 
 pip install -r requirements.txt
 
+Also assumes you have the aws cli configure w/ access key.
+
 ## Usage
 
 Open a command line, try:
