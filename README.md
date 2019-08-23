@@ -56,6 +56,6 @@ Checking for matching instances...
 19      z1d.metal             0.0              1.0       0.000000            24.0
 ```
 
-Not it gives a lsit of recommendation, and the scoring table so you can understand the data and what you have currently running. Scoring is generated via a separate csv called ratios.csv. Which in turn is generated via generate_ratios.py (python generate_ratios.py) and *that* depends on ec2_data.csv existing.
+Note it gives a table of recommendation, and the scoring table so you can understand the data and what you have currently running. Scoring is generated via a separate csv called ratios.csv. Which in turn is generated via generate_ratios.py (python generate_ratios.py) and *that* depends on ec2_data.csv existing.
 
 ec2_data.csv is pulled from ec2instances.info, the only columns needed are the instance name and the Linux on demand monthly cost.  Ratios between monthly costs are generally whole numbers, but with RIs etc they can be off by tiny decimal points, not enough to matter when it comes to calculating the RIs, so you may get results asking you to buy .9999 of an instance or similar.
